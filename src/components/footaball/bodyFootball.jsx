@@ -1,3 +1,4 @@
+import footImage from './images/myfot.jpg'
 function BodyFootball() {
     return (<>
     
@@ -5,7 +6,7 @@ function BodyFootball() {
   className="hero min-h-screen"
   style={{
     backgroundImage:
-      "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+      `url(${footImage})`,
   }}
 >
   <div className="hero-overlay"></div>
