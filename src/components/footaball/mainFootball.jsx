@@ -8,6 +8,7 @@ function MainFootball() {
     <div className=" flex  flex-col justify-center items-center">
     <HeadFootball/>
     <BodyFootball/>
+    <div className="divider"></div>
     <FootballTeams/>
     <FooterFootball/>
     </div>

@@ -1,36 +1,27 @@
+import img1 from './images/players/mesi.jpeg'
+import img2 from './images/players/fly.jpeg'
+import img3 from './images/players/rakuten.jpeg'
+import img4 from './images/players/neymar.jpeg'
 function FootballTeams() {
     return (<>
     
-    <div className="carousel carousel-end rounded-box">
-  <div className="carousel-item">
-    <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="Drink" />
+    <div className="carousel carousel-end space-x-1  rounded-box">
+  <div className="carousel-item w-1/4">
+    <img src={img1} alt="Drink" className='' />
   </div>
-  <div className="carousel-item">
+  <div className="carousel-item w-1/4">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-      alt="Drink" />
+  src={img2} alt="Drink" className='' />
   </div>
-  <div className="carousel-item">
+  <div className="carousel-item w-1/4">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-      alt="Drink" />
+    src={img3} alt="Drink" className='' />
   </div>
-  <div className="carousel-item">
+  <div className="carousel-item w-1/4">
     <img
-      src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-      alt="Drink" />
+      src={img4} alt="Drink" className='' />
   </div>
-  <div className="carousel-item">
-    <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="Drink" />
-  </div>
-  <div className="carousel-item">
-    <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp" alt="Drink" />
-  </div>
-  <div className="carousel-item">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-      alt="Drink" />
-  </div>
+ 
 </div>
     </>  );
 }
