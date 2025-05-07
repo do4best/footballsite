@@ -5,6 +5,7 @@ import { IoFootball } from "react-icons/io5";
 import { TiLocation } from "react-icons/ti";
 import { FaLightbulb, FaRegLightbulb } from "react-icons/fa6";
 import { MdOutlineDarkMode } from "react-icons/md";
+import FootballTranslation from './footballTranslation';
 function HeadFootball() {
   const [sideNave,setSideNave] = useState(false)
   const [dark,setDark] = useState(localStorage.getItem('them')||'light')
@@ -25,6 +26,12 @@ function HeadFootball() {
     {
       sideNave ? (  <div className="bg-black/60 fixed w-full h-screen z-10 top-0 left-0" onClick={()=>setSideNave(!sideNave)}></div>):("")
     }
+   <details className="dropdown absolute md:right-60 top-2 sm:right-28">
+  <summary className="btn m-1">Language</summary>
+  <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <li><FootballTranslation/>
+        </li></ul> 
+  </details> 
     <div className={sideNave ? "fixed top-0 left-0 w-[300px] h-screen text-gray-600 bg-white z-10 duration-200":"fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-200"}>
       <AiOutlineClose size={25} onClick={()=>setSideNave(!sideNave)} className='absolute right-4 top-4 cursor-pointer'/>
       <h2 className='text-2xl text-blue-500 mt-2 ml-2'> Our Obligation</h2>

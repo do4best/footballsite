@@ -7,19 +7,19 @@ function FootballTeams() {
     
     <div className="carousel carousel-end space-x-1  rounded-box">
   <div className="carousel-item w-1/4">
-    <img src={img1} alt="Drink" className='' />
+    <img src={img1} alt="mesi" className='' />
   </div>
   <div className="carousel-item w-1/4">
     <img
-  src={img2} alt="Drink" className='' />
+  src={img2} alt="player" className='' />
   </div>
   <div className="carousel-item w-1/4">
     <img
-    src={img3} alt="Drink" className='' />
+    src={img3} alt="player1" className='' />
   </div>
   <div className="carousel-item w-1/4">
     <img
-      src={img4} alt="Drink" className='' />
+      src={img4} alt="player2" className='' />
   </div>
  
 </div>
