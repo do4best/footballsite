@@ -3,12 +3,15 @@ import img2 from './images/players/fly.jpeg'
 import img3 from './images/players/rakuten.jpeg'
 import img4 from './images/players/neymar.jpeg'
 import { TeamDetails } from './teamDetails';
+import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 function FootballTeams() {
     return (<>
+    
     
     <div className="flex flex-row justify-center items-center  gap-4 flex-wrap">
 
 {TeamDetails.map((value,index)=>(
+
   <div key={index} className="card bg-base-100 w-96 shadow-sm">
     <figure className='relative'>
       <img src={value.img} alt={value.title}/>
