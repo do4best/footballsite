@@ -27,8 +27,9 @@ function HeadFootball() {
     {
       sideNave ? (  <div className="bg-black/60 fixed w-full h-screen z-10 top-0 left-0" onClick={()=>setSideNave(!sideNave)}></div>):("")
     }
-   <details className="dropdown absolute md:right-60 top-2 sm:right-28">
-  <summary className="btn m-1">Language</summary>
+    {/* laungage button option */}
+   <details className="dropdown absolute top-2 right-42 sm:right-28 md:right-60  ">
+  <summary className="btn m-1 ">Language</summary>
   <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
     <li><FootballTranslation/>
         </li></ul> 
