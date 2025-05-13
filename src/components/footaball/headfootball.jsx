@@ -7,6 +7,11 @@ import { FaLightbulb, FaRegLightbulb } from "react-icons/fa6";
 import { MdOutlineDarkMode } from "react-icons/md";
 import FootballTranslation from './footballTranslation';
 import { NaveBarData } from './naveBarData';
+import { Link,Route,Routes } from 'react-router';
+import MainFootball from './mainFootball';
+import OurProspect from'./ourProspect';
+import OurTeam from './outTeam';
+import OurLocation from './ourLocation';
 function HeadFootball() {
   const [sideNave,setSideNave] = useState(false)
   const [dark,setDark] = useState(localStorage.getItem('them')||'light')
@@ -41,10 +46,13 @@ function HeadFootball() {
   <ul className="flex flex-col p-4 text-gray-900">
     {NaveBarData.map((value,index)=>(
  <li  key={index}>
-  <a href={value.path} className="text-xl py-4 flex">
+  <Link to={value.path} className='text-xl py-4 flex'>
+  
+
+  
   {value.icons}
   {value.title}
-  </a>
+</Link>
 
  </li>
     ))}
@@ -67,6 +75,13 @@ function HeadFootball() {
 
 
 </div>
+
+  <Routes>
+    <Route path="/" element={<MainFootball />} />
+    <Route path="/ourprospect" element={<OurProspect />} />
+    <Route path="/ourteam" element={<OurTeam />} />
+
+  </Routes>
     </>  );
 }
 
