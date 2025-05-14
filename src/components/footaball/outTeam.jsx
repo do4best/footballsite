@@ -1,6 +1,13 @@
+import FooterFootball from "./footerFootball";
+import HeadFootball from "./headfootball";
+import BodyFootball from "./bodyFootball";
 function OurTeam() {
     return (<>
-    <h1>Our Team</h1>
+<div className=" flex  flex-col justify-center items-center">
+    <HeadFootball/>
+  <BodyFootball textValue={"Our Team"}/>
+     <FooterFootball/>
+    </div>
     </>  );
 }
 

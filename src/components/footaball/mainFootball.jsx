@@ -11,7 +11,7 @@ function MainFootball() {
   
     <div className=" flex  flex-col justify-center items-center">
     <HeadFootball/>
-    <BodyFootball/>
+    <BodyFootball textValue={"Hello There"}/>
     <div className="divider"></div>
     <FootballTeams/>
     <FooterFootball/>

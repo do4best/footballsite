@@ -11,12 +11,12 @@ path:"/"
 {
     icons:<RiTeamFill size={25} className='mr-4 text-white bg-black rounded-full '/>,
     title: "Our Team",
-    path:"/ourprospect"
+    path:"/ourteam"
     },
     {
         icons:<TiLocation size={25} className='mr-4 text-white bg-black rounded-full '/>,
         title: "Our Location",
-        path:"/ourteam"
+        path:"/ourlocation"
         },
 
 ]
