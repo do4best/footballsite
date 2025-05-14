@@ -44,14 +44,14 @@ function HeadFootball() {
       <h2 className='text-2xl text-blue-500 mt-2 ml-2'>{sideNave?'Our Obligation':''}</h2>
 <nav>
   <ul className="flex flex-col p-4 text-gray-900">
-    {NaveBarData.map((value,index)=>(
- <li  key={index}>
-  <Link to={value.path} className='text-xl py-4 flex'>
+    {NaveBarData.map(({title,path,icons})=>(
+ <li  key={title}>
+  <Link to={path} className='text-xl py-4 flex'>
   
 
   
-  {value.icons}
-  {value.title}
+  {icons}
+  {title}
 </Link>
 
  </li>
@@ -76,12 +76,7 @@ function HeadFootball() {
 
 </div>
 
-  <Routes>
-    <Route path="/" element={<MainFootball />} />
-    <Route path="/ourprospect" element={<OurProspect />} />
-    <Route path="/ourteam" element={<OurTeam />} />
 
-  </Routes>
     </>  );
 }
 
