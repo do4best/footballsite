@@ -14,13 +14,13 @@ import OurTeam from './outTeam';
 import OurLocation from './ourLocation';
 function HeadFootball() {
   const [sideNave,setSideNave] = useState(false)
-  const [dark,setDark] = useState(localStorage.getItem('theme')||'acid')
+  const [dark,setDark] = useState(localStorage.getItem('theme')||'light')
   useEffect(()=>{
     localStorage.setItem('theme',dark)
     document.querySelector('html').setAttribute('data-theme',dark)
   },[dark])
   const toggleTheme = ()=>{
-    setDark(dark === 'acid'?'business':'acid')
+    setDark(dark === 'light'?'business':'light')
   }
     return (<>
     
@@ -70,7 +70,7 @@ function HeadFootball() {
 
   </div>
   <div className="flex gap-2">
-  <span className="fixed top-2 right-35  sm:absolute sm:right-50 mt-2 " onClick={toggleTheme}>{!dark === 'acid'?<FaRegLightbulb size={30}/>:<FaLightbulb size={30}/>} </span>
+  <span className="fixed top-2 right-35  sm:absolute sm:right-50 mt-2 " onClick={toggleTheme}>{!dark === 'light'?<FaRegLightbulb size={30}/>:<FaLightbulb size={30}/>} </span>
     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
     </div>
 
