@@ -46,11 +46,12 @@ function HeadFootball() {
   <ul className="flex flex-col p-4 text-white">
     {NaveBarData.map(({title,path,icons})=>(
  <li  key={title}>
-  <Link to={path} className='text-xl py-4 flex'>
+  <Link to={path} className='text-xl py-4 flex items-center transition-transform duration-200 hover:scale-105 hover:shadow-lg'>
   
 
-  
+  <span className="transition-transform duration-200 hover:scale-125">
   {icons}
+  </span>
   {title}
 </Link>
 

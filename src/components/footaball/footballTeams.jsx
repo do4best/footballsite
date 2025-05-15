@@ -6,13 +6,7 @@ import * as motion from "motion/react-client"
 import { TeamDetails } from './teamDetails';
 import { Card, Image, Text, Badge, Button, Group } from '@mantine/core';
 function FootballTeams() {
-  <motion.button
-  whileHover={{
-    scale: 1.2,
-    transition: { duration: 1 },
-  }}
-  whileTap={{ scale: 0.9 }}
-/>
+
     return (<>
     
     
@@ -23,7 +17,7 @@ function FootballTeams() {
   <div key={index} className="card bg-base-100 w-96 shadow-sm">
     <figure className='relative '>
    
-      <img src={value.img} alt={value.title} className='w-full h-100 object-cover'/>
+      <img src={value.img} alt={value.title} className='w-full h-100 object-cover transition-transform duration-300 hover:scale-105 hover:shadow-xl'/>
     
     </figure>
     <div className="   absolute inset-0 flex flex-col justify-end items-center text-white p-4">
